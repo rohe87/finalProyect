@@ -1,0 +1,121 @@
+
+@import "variables";
+@import "logoP";
+@import "body";
+@import "nav";
+@import "footer";
+@import "media";
+@import "maps";
+@import "extend";
+@import "mixin";
+@import "contact";
+@import "nosotros";
+
+
+.titulo {
+	color: $color-h1tit;
+}
+.tituloContact {
+	color: $color-h1tit;
+	text-align: center;
+}
+
+img {
+	border-style: none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.cardIndex {
+	opacity: 0.7;
+	text-align: center;
+	background-color: $color-card;
+	margin:30px;
+	.card-bodyp{
+	 margin: 20px;
+	 padding: 20px;
+	}
+}
+.card-titleProd {
+	text-align: center;
+	font-size: 30px;
+	color: $color-card;
+}
+.cardG{
+	height: 550px;
+	width: 400px;
+	align-items: center;
+}
+.cardA{
+	height: 550px;
+	width: 400px;
+	align-items: center;
+}
+
+
+.card-titleUbi {
+	text-align: center;
+	font-size: 30px;
+	color: $color-card;
+}
+
+
+
+
+
+.vmv {
+	width: 50px;
+}
+
+#botonS {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+	background: rgb(255,27,0);
+	background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+	&:hover {
+		color: black;
+		box-shadow: none;
+		&:before {
+			width: 100%;
+			transition: 800ms ease all;
+		}
+		&:after {
+			width: 100%;
+			transition: 800ms ease all;
+		}
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 2px;
+		width: 0;
+		background: #f0094a;
+		box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+		transition: 400ms ease all;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 2px;
+		width: 0;
+		background: #f0094a;
+		box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+		transition: 400ms ease all;
+		right: inherit;
+		top: inherit;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+
+
+
